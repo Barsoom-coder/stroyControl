@@ -1,0 +1,49 @@
+.header {
+	height: 100vh;
+	&__top {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-top: 26px;
+		padding-bottom: 26px;
+		padding-left: 31px;
+		padding-right: 31px;
+		margin: 0 auto;
+		margin-bottom: 74px;
+		.menu {
+			&__item{
+				&:nth-child(7) {
+					padding-right: 20px;
+				}
+				&:last-child {
+					padding-right: 0;
+				}
+			}
+		}
+		.btn-order{
+			font-size: 15px;	
+			line-height: 16px;
+			padding: 9px 20px;
+		}
+	}
+	&__main {
+		text-align: center;
+		&-title {
+			font-size: 48px;
+			line-height: 64px;
+			color: #212B31;
+			font-weight: 400;
+			max-width: 818px;
+			margin: 0 auto;
+			margin-bottom: 30px;
+		}
+		&-buttons {
+			height: 50px;
+			margin-bottom: 88px;
+		}
+	}
+}
+
+
+
+

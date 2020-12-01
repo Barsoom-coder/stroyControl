@@ -2,9 +2,9 @@
 
 $accent: orange // Accent Color
 $fontsize: 16px // Body Font Size
-$textcolor: #333 // Text Color
+$textcolor: #72787D // Text Color
 $lineheight: 1.65 // Document Line Height
-$userfont: Roboto, sans-serif // User Font Family
+$userfont: Inter-Regular, sans-serif // User Font Family
 $systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
 
 // Bootstrap compatible gutter variable => $gutter
@@ -28,10 +28,10 @@ $gutter: $grid-gutter-width
 		src: local($fname), url($furl) format('woff2')
 		// font-display: swap // Uncomment to initially display system fonts
 
-@include font('Roboto', normal, 400, '../fonts/roboto-regular-webfont.woff2')
-@include font('Roboto', italic, 400, '../fonts/roboto-italic-webfont.woff2')
-@include font('Roboto', normal, 700, '../fonts/roboto-bold-webfont.woff2')
-@include font('Roboto', italic, 700, '../fonts/roboto-bolditalic-webfont.woff2')
+// @include font('Roboto', normal, 400, '../fonts/roboto-regular-webfont.woff2')
+@include font('Arial', normal, 400, '../fonts/ArialCyr.woff2')
+@include font('Inter-Regular', normal, 400, '../fonts/Inter-Regular.woff2')
+@include font('Inter-Medium', normal, 500, '../fonts/Inter-Medium.woff2')
 
 // GENERAL DOCUMENT STYLES
 
@@ -49,11 +49,43 @@ input, textarea
 	&:required:valid
 		border-color: green
 
+
+
+.container
+	max-width: 1086px
+	padding: 0 15px
+	margin: 0 auto
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 
+	padding: 0
+	margin: 0
+
+a 
+	color: inherit
+	text-decoration: none
+	transition: all 0.4s ease
+	&:hover
+		text-decoration: none
+		color: #036FC7
+
+ul,li 
+	list-style-type: none
+	margin: 0
+	padding: 0
+
 body
 	font-family: $userfont
 	font-size: $fontsize
 	line-height: $lineheight
 	color: $textcolor
 	min-width: 320px
+	max-width: 1440px
 	position: relative
+	margin: 0 auto
 	overflow-x: hidden
+	background-color: #fff

@@ -1,4 +1,59 @@
 @import config
+@import header.scss
 
 // CUSTOM USER STYLES & IMPORTS
 
+%Arial
+	font-family: Arial, sans-serif
+	font-weight: 400
+
+%Inter-Regular
+	font-family: Inter-Regular, sans-serif
+	font-weight: 400
+
+%Inter-Medium
+	font-family: Inter-Medium, sans-serif
+	font-weight: 500
+
+.menu 
+	&__item 
+		display: inline-block
+		padding-right: 22px
+	&__link
+		font-size: 16px
+		line-height: 19px
+
+.btn-order
+	@extend  %Arial
+	background: #212B31
+	border: 1px solid #212B31
+	box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16)
+	border-radius: 4px
+	padding: 13px 25px
+	font-size: 17px
+	line-height: 24px
+	text-align: center
+	display: inline-block
+	color: #FFFFFF
+	transition: all 0.4s ease
+	&:hover
+		color: #212B31
+		background-color:	#FFFFFF
+		border: 1px solid #DADEDF
+
+.btn-details
+	@extend  %Inter-Regular
+	background: #FFFFFF
+	border: 1px solid #DADEDF
+	border-radius: 4px
+	font-size: 17px
+	display: inline-block
+	line-height: 24px
+	text-align: center
+	color: #212B31
+	padding: 13px 25px
+	transition: all 0.4s ease
+	&:hover
+		background-color: #212B31
+		color: #FFFFFF
+		border: 1px solid #DADEDF
