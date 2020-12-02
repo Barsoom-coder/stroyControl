@@ -1,0 +1,33 @@
+.advantages {
+	margin-bottom: 142px;
+	&__inner {
+		max-width: 1057px;
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+	&__box {
+		display: flex;
+		max-width: 325px;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__img {
+		width: 48px;
+		padding-bottom: 20px;
+	}
+	&__title {
+		font-size: 18px;
+		line-height: 24px;
+		font-weight: 400;
+		color: #212B31;
+		padding-bottom: 10px;
+	}
+	&__text {
+		text-align: center;
+		&--mod {
+			max-width: 315px;
+		}
+	}
+}
