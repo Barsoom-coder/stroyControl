@@ -1,0 +1,87 @@
+.delivery {
+	margin-bottom: 124px;
+	&__inner {
+		text-align: center;
+	}
+	&__title {
+		padding-bottom: 21px !important;
+	}
+	&__subtitle {
+		@include text_20px;
+		max-width: 643px;
+		margin: 0 auto;
+		padding-bottom: 43px;
+	}
+	&__block-wrap {
+		display: flex;
+		margin-bottom: 33px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&__block {
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+		max-width: 334px;
+		position: relative;
+		padding-left: 64px;
+		margin-right: 27px;
+		&:last-child {
+			margin-right: 0;
+		}
+		&::before {
+			position: absolute;
+			content: '';
+			width: 48px;
+			height: 48px;
+			left: 0px;
+			top: 0;
+		}
+		&--concrete::before {
+			background: url(../img/dest/delivery/concrete.svg);
+		}
+		&--recycling::before {
+			background: url(../img/dest/delivery/recycling.svg);
+		}
+		&--formwork::before {
+			background: url(../img/dest/delivery/formwork.svg);
+		}
+		&--precasts::before {
+			background: url(../img/dest/delivery/precasts.svg);	
+		}
+		&--facades::before {
+			background: url(../img/dest/delivery/facades.svg);
+		}
+		&--fit-out::before {
+			background: url(../img/dest/delivery/fit-out.svg);
+		}
+		&--scaffolding::before {
+			background: url(../img/dest/delivery/scaffolding.svg);
+		}
+		&--frame::before {
+			background: url(../img/dest/delivery/frame.svg);
+		}
+		&--mep::before {
+			background: url(../img/dest/delivery/mep.svg);
+		}
+	}
+
+	&__block-title {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 24px;
+		color: #212B31;
+		padding-bottom: 11px;
+	}
+	&__block-text {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 24px;
+		color: #72787D;
+
+	}
+	&__etc {
+		@include text_20px;
+	}
+}

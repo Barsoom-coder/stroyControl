@@ -1,10 +1,11 @@
 @import config
-@import header.scss
-@import advantages.scss
-@import building.scss
-@import skills.scss
-@import partners.scss
+@import header
+@import advantages
+@import building
+@import skills
+@import partners
 @import about
+@import delivery
 
 // CUSTOM USER STYLES & IMPORTS
 
@@ -72,5 +73,22 @@
 		padding-bottom: 16px
 		text-align: center
 	
+.yellow-bg 
+		font-weight: 400
+		font-size: 20px
+		line-height: 32px
+		color: #212B31
+		position: relative
+		display: inline
+		&::after 
+			content: ''
+			position: absolute
+			width: 100%
+			height: 50%
+			background: #FFD042
+			left: 0
+			bottom: 0
+			z-index: -1
 
+		
 	

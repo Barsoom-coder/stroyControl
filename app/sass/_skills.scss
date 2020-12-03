@@ -22,24 +22,6 @@
 		text-align: left;
 		padding-bottom: 28px;
 	}
-	&__info-text {
-		font-weight: 400;
-		font-size: 20px;
-		line-height: 32px;
-		color: #212B31;
-		position: relative;
-		&::after {
-			content: '';
-			position: absolute;
-			width: 250px;
-			height: 16px;
-			background: #FFD042;
-			left: 0;
-			bottom: 0;
-			z-index: -1;
-
-		}
-	}
 	&__img {
 		width: 464px;
 	}
