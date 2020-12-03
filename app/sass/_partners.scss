@@ -1,0 +1,26 @@
+.partners {
+	margin-bottom: 80px;
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		align-items: space-between;
+		justify-content: center;
+		max-width: 1088px;
+		min-height: 272px;
+		margin: 0 auto;
+		border-top: 1px solid #EEF2F3;
+		border-bottom: 1px solid #EEF2F3;;
+	}
+	&__box {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-width: 400px;
+	}
+	&__img {
+		padding-right: 39px;
+		&:last-child {
+			padding-right: 0;
+		}
+	}
+}
