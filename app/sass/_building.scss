@@ -1,0 +1,22 @@
+.building {
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	margin-bottom: 144px;
+	&__inner {
+		max-width: 1040px;
+		text-align: center;
+		margin: 0 auto;
+	}
+	&__text {
+		@include text_20px;
+		max-width: 1015px;
+		margin: 0 auto;
+		padding-bottom: 344px;
+		span {
+			display: block;
+		}
+	&__img {
+		width: 1040px;
+	}
+	}
+}
