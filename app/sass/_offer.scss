@@ -1,0 +1,26 @@
+.offer {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 150px;
+	&__title {
+		padding-right: 38px;
+		padding-left: 38px;
+		padding-top: 117px;
+		padding-bottom: 54px;
+		font-weight: 400;
+		font-size: 48px;
+		line-height: 64px;
+		text-align: center;
+		color: #212B31;
+	}
+	&__buttons {
+		padding-bottom: 117px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__order {
+		margin-right: 16px;
+	}
+}
