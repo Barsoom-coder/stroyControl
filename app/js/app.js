@@ -21,4 +21,16 @@ document.addEventListener('DOMContentLoaded', () => {
 		rtl: true,
 	});
 
+	$('.choice__slider').slick({
+		slidesToShow: 1,
+		// slidesToScroll: 1,
+		// cssEase: 'linear',
+		arrows: false,
+		dots: true,
+    customPaging : function(slider, i) {
+        return '<img src="../img/dest/choice/slide-dot.png" /><img src="../img/dest/choice/slide-dot-active.png" />';
+    },
+	});
+
 });
+

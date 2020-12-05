@@ -14,7 +14,6 @@
 	}
 	&__block-wrap {
 		display: flex;
-		margin-bottom: 33px;
 		&:last-child {
 			margin-bottom: 0;
 		}
@@ -24,11 +23,12 @@
 		flex-direction: column;
 		text-align: left;
 		max-width: 334px;
+		margin-bottom: 30px;
 		position: relative;
 		padding-left: 64px;
-		margin-right: 27px;
+		margin-right: 0;
 		&:last-child {
-			margin-right: 0;
+			margin-bottom: 0;
 		}
 		&::before {
 			position: absolute;
