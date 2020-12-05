@@ -23,8 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	$('.choice__slider').slick({
 		slidesToShow: 1,
-		// slidesToScroll: 1,
-		// cssEase: 'linear',
+		slidesToScroll: 1,
+		cssEase: 'linear',
 		arrows: false,
 		dots: true,
     customPaging : function(slider, i) {
