@@ -7,20 +7,6 @@ import slick from 'slick-carousel';
 
 document.addEventListener('DOMContentLoaded', () => {
 
-	// Custom JS
-	$('.header__slider').slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		cssEase: 'linear',
-		autoplay: true,
-		autoplaySpeed: 0,
-		arrows: false,
-		draggable: false,
-		pauseOnHover: false,
-		speed: 20000,
-		rtl: true,
-	});
-
 	$('.choice__slider').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
