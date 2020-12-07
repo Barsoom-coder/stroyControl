@@ -11,7 +11,7 @@
 			height: 40px;
 			right: -30px;
 			top: -20px;
-			background: url(../img/dest/quality/leaf.svg);
+			background-image: url(../img/dest/quality/leaf.svg);
 		}
 	}
 	&__subtitle {
@@ -74,5 +74,66 @@
 	}
 	&__details-button {
 		font-size: 18px !important;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.quality__block-wrap {
+		flex-direction: column;
+		align-items: center;
+	}
+	.quality__block {
+		margin-bottom: 50px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+@media screen and ( max-width: 768px) {
+	.quality__title {
+		&::after {
+			width: 36px;
+			height: 36px;
+			right: -30px;
+			top: -20px;
+			background-size: cover;
+		}
+	}
+	.quality__details-wrap {
+		flex-direction: column;
+	}
+	.quality__subtitle, .quality__details-info {
+		font-size: 17px;
+		line-height: 26px;
+	}
+	.quality__details-info {
+		padding-bottom: 0px;
+		padding-right: 0;
+	}
+	.quality__details-button {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+}
+@media screen and ( max-width: 480px) {
+	.quality__title {
+		&::after {
+			width: 30px;
+			height: 30px;
+			right: -24px;
+			top: -18px;
+			background-size: cover;
+		}
+	}
+	.quality__details-info {
+		padding-left: 15px;
+		padding-top: 56px;
+		text-align: center;
+		&::before {
+			left: 50%;
+			transform: translateX(-50%);
+			top: 12px;
+		}
 	}
 }
