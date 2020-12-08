@@ -70,7 +70,7 @@
 	}
 	&__slider-wrap {
 		max-width: 614px;
-		max-height: 516px;
+		min-height: 516px;
 		background: #F6F8F9;
 	}
 	&__slider {
@@ -195,4 +195,114 @@
 
 .slick-dots li.slick-active img:nth-child(2) {
 	display: block;
+}
+
+@media screen and (max-width: 1200px) {
+	.choice__top-wrap {
+		flex-direction: column;
+		align-items: center;
+	}
+	.choice__block-wrap {
+		padding-right: 0;
+		padding-bottom: 50px;
+	}
+}
+@media screen and (max-width: 645px) {
+	.choice__slider-text {
+		font-size: 25px;
+		line-height: 38px;
+	}
+	.choice__slider-wrap {
+		max-width: 514px;
+		min-height: 416px;
+	}
+	.choice__slider-item {
+		max-width: 481px;
+		min-height: 315px;
+		padding-left: 50px;
+	}
+	.slick-dots {
+		left: 11%;
+	}
+	
+}
+
+@media screen and (max-width: 1050px) {
+	.choice__top-wrap {
+		padding-bottom: 110px;
+	}
+	.choice {
+		margin-bottom: 110px;
+	}
+}
+@media screen and (max-width: 700px) {
+	.choice__top-wrap {
+		padding-bottom: 90px;
+	}
+	.choice {
+		margin-bottom: 90px;
+	}
+}
+@media screen and (max-width: 760px) {
+	.choice__achiev-wrap {
+		flex-direction: column;
+		align-items: center;
+	}
+	.choice__subtitle {
+		font-size: 17px;
+		line-height: 21px;
+	}
+	.choice__block-title {
+		font-size: 17px;
+		line-height: 21px;
+	}
+	.choice__block-text {
+		font-size: 15px;
+		line-height: 21px;
+	}
+	.choice__achiev-block {
+		margin: 0;
+		padding-bottom: 40px;
+		&:last-child {
+			padding-bottom: 0;
+		}
+	}
+	.choice__achiev-img {
+		margin-bottom: 20px;
+		display: flex;
+		align-items: flex-end;
+	}
+}
+@media screen and (max-width: 550px) {
+	.choice__slider-wrap {
+		display: none;
+	}
+}
+@media screen and (max-width: 500px) {
+	.choice__subtitle  {
+		padding-bottom: 120px;
+	}
+	.choice__top-wrap {
+		padding-bottom: 30px;
+		align-items: center;
+	}
+	.choice {
+		margin-bottom: 80px;
+	}
+	.choice__block {
+		text-align: center;
+		margin: 0;
+		padding: 0;
+		max-width: 360px;
+		margin-bottom: 110px;
+		&:last-child {
+			margin-right: 0;
+			margin-bottom: 0;
+		}
+		&::before {
+			left: 50%;
+			transform: translateX(-50%);
+			top: -60px;
+		}
+	}
 }
