@@ -182,3 +182,21 @@
 		padding-bottom: 80px;
 	}
 }
+@media screen and ( max-width: 992px) {
+	.features__info-title {
+		font-size: 30px;
+		line-height: 44px;
+	}
+}
+@media screen and ( max-width: 768px) {
+	.features__info-title {
+		font-size: 28px;
+		line-height: 40px;
+	}
+}
+@media screen and ( max-width: 480px) {
+	.features__info-title {
+		font-size: 22px;
+		line-height: 28px;
+	}
+}
