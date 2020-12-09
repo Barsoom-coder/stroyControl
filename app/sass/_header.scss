@@ -1,4 +1,6 @@
 .header {
+	padding-right: 15px;
+	padding-left: 15px;
 	height: 888px;
 	position: relative;
 	background-repeat: no-repeat;
@@ -65,7 +67,9 @@
 			}
 		}
 	}
-	
+	.drawer-wrap {
+		display: none;
+	}
 	@mixin alpha-attribute($attribute, $color, $background) {
 		$percent: alpha($color) * 100%;
 		$opaque: opacify($color, 1);
@@ -102,6 +106,7 @@
 	
 	
 	.drawer-list {
+		z-index: 9998;
 		position: fixed;
 		right: 0;
 		top: 0;
@@ -160,9 +165,10 @@
 	}
 	
 	input#hamburger {
-		display: none;
-		&:checked {	
-			& ~ .drawer-list {
+		z-index: 9999;
+		// display: none;
+		&:checked {
+			& ~ .drawer-list--active {
 				transform: translatex(0);
 				border-bottom-left-radius: 0;
 				li {
@@ -173,7 +179,7 @@
 					}
 				}
 			}
-			& ~ label {
+			& ~ label.hamburger--active {
 				> i {
 					background-color: transparent;
 					transform: rotate(90deg);
@@ -198,8 +204,9 @@
 	
 	label.hamburger {
 		z-index: 9999;
+		display: none;
 		position: relative;
-		display: block;
+		// display: none;
 		height: 40px;
 		width: 40px;
 		&:hover {
@@ -242,19 +249,6 @@
 		right: 31px;
 	}
 	
-	/**
-			SCROLLBAR STYLE FOR IE
-	*/
-	
-	
-	.icon {
-		display: inline-block;
-		width: 5vw;
-		height: 4vw;
-		stroke-width: 0;
-		stroke: currentColor;
-		fill: currentColor;
-	}
 }
 
 @media screen and (max-width: 1250px) {
@@ -335,7 +329,7 @@
 			right: 15px;
 		}
 		.header__main-buttons {
-			width: 200px;
+			width: 170px;
 			height: 150px;
 			margin: 0 auto;
 			flex-direction: column;
@@ -343,6 +337,10 @@
 		.header__main-order {
 			margin-right: 0;
 			margin-bottom: 20px;
+			width: 100%;
+		}
+		.header__main-details {
+			width: 100%;
 		}
 	}
 	@media screen and (max-height: 900px) {

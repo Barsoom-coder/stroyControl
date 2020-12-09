@@ -1,6 +1,8 @@
 .quality {
 	padding-bottom: 144px;
 	&__title {
+		padding-right: 15px;
+		padding-left: 15px;
 		display: table;
 		position: relative;
 		margin: 0 auto;
@@ -15,12 +17,16 @@
 		}
 	}
 	&__subtitle {
+		padding-right: 15px;
+		padding-left: 15px;
 		@include text_20px;
 		max-width: 857px;
 		margin: 0 auto;
 		padding-bottom: 48px;
 	}
 	&__block-wrap {
+		padding-right: 15px;
+		padding-left: 15px;
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-start;
