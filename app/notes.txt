@@ -1,6 +1,0 @@
-section header: 25px;
-section margin-bottom: 80px
-
-section text: 
-			font-size: 17px;
-			line-height: 26px;

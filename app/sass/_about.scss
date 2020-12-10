@@ -28,7 +28,7 @@
 			.about__block-img {
 				margin-right: 50px;
 				margin-left: 0px;
-				justify-content: start;
+				justify-content: flex-start;
 			}
 		}
 	}
@@ -69,7 +69,7 @@
 		&:nth-child(even) {
 			margin-left: 0;
 			flex-direction: column-reverse;
-			justify-content: start;
+			justify-content: flex-start;
 			.about__block-img {
 				display: flex;
 				justify-content: center;
